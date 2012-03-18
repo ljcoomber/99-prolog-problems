@@ -1,6 +1,6 @@
 :- begin_tests(p1).
 
-test(p1_01, [nondet]) :-
+test(p1_01) :-
     my_last(d, [a, b, c, d]).
 
 :- end_tests(p1).
