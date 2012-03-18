@@ -1,8 +1,8 @@
 % Find the last element of a list
-my_last(E, [E]) :- !.
-my_last(E, [_|T]) :- my_last(E, T).
+my_last(X, [X]) :- !.
+my_last(X, [_|L]) :- my_last(X, L).
 
 % Find the last but one element of a list
-last_but_one(E, [E, _]) :- !.
-last_but_one(E, [_,Y|Ys]) :- last_but_one(E, [Y|Ys]).
+last_but_one(X, [X, _]) :- !.
+last_but_one(X, [_,Y|Ys]) :- last_but_one(X, [Y|Ys]).
     
